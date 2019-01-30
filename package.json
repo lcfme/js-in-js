@@ -1,0 +1,25 @@
+{
+  "name": "js-in-js",
+  "version": "0.0.1",
+  "description": "parser javascript",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --env.prod --progress",
+    "watch": "webpack --watch --progress"
+  },
+  "keywords": [
+    "javascript",
+    "parser"
+  ],
+  "author": "Liu Chaofan",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "flow-bin": "^0.91.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
