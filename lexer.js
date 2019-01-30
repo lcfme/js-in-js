@@ -33,9 +33,24 @@ export class Lexer {
     return this.peekChar() === '';
   }
   nextToken() {
+    // TODO
     const ch = this.peekChar();
     switch (ch) {
-      // TODO
+      case '+':
+        break;
+      case '-':
+        break;
+      case '*':
+        break;
+      case '/':
+        break;
+      case '':
     }
+  }
+  throwError(msg) {
+    const err = new Error();
+    err.message = `Unexpected Token ${this.ch}. \nAt:${this.at}\nLine:${
+      this.line
+    }\nCol:${this.col}`;
   }
 }
